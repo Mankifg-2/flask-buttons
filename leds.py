@@ -17,9 +17,11 @@ def toggle(i):
     if Ledtoggle[i]:
         off(i)
         Ledtoggle[i] = False
+        print("off")
     else:
         on(i)
         Ledtoggle[i] = True
+        print("on")
 
 
 
