@@ -9,10 +9,11 @@ light_1 = False
 def index():
     print(request.method)
     if request.method == 'POST':
-        if request.form.get('Encrypt') == 'Encrypt':
+        if request.form.get('light-1') == 'light-1':
+            print("toggle 0")
             toggle(0)
-        elif  request.form.get('Decrypt') == 'Decrypt':
-            off(0)
+        elif  request.form.get('light-2') == 'light-2':
+            toggle(1)
         else:
             #? other
             return render_template("main.html")
