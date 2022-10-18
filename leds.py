@@ -3,29 +3,34 @@ import RPi.GPIO as GPIO
 import time
 
 LedPins = [17,27]
+Ledtoggle = []
 
 def setup():
-    #LedPins = [17,27]
+
+   
+    for i in len(LedPins):
+        Ledtoggle.append(False)
+
     GPIO.setmode(GPIO.BCM)
     for led in LedPins:
         GPIO.setup(led, GPIO.OUT, initial=GPIO.HIGH)
 
-def main():
-    while True:
-        print ('[+] ')
-        on(0)
-        off(1)
-        time.sleep(0.5)
-        print ('[-] ')
-        on(1)
-        off(0)
-        time.sleep(0.5)
+def toggle(i):
+    if Ledtoggle[i]:
+        off(i)
+        Ledtoggle[i] = False
+    else:
+        on(i)
+        Ledtoggle[i] = True
+
+
+
 
 def on(i):
     GPIO.output(LedPins[i], GPIO.LOW)
-
 def off(i):
     GPIO.output(LedPins[i], GPIO.HIGH)
+
 
 def destroy():
     for led in LedPins:
