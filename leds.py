@@ -6,9 +6,7 @@ LedPins = [17,27]
 Ledtoggle = []
 
 def setup():
-
-   
-    for i in len(LedPins):
+    for i in range(len(LedPins)):
         Ledtoggle.append(False)
 
     GPIO.setmode(GPIO.BCM)
