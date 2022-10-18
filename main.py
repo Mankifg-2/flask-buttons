@@ -10,7 +10,7 @@ def index():
     print(request.method)
     if request.method == 'POST':
         if request.form.get('Encrypt') == 'Encrypt':
-            print("Encrypted")
+            print("on")
             on(0)
         elif  request.form.get('Decrypt') == 'Decrypt':
             off(0)
@@ -25,7 +25,7 @@ def index():
 if __name__ == '__main__':
     setup()
     try:
-        app.run(debug=True)
+        app.run(host="0.0.0.0", port=80, debug=True)
     except KeyboardInterrupt:
         #? on end
         destroy()
