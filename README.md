@@ -1,1 +1,8 @@
-# Test
+# Credits
+
+## Krumpich -- Graphic Design
+
+
+
+
+###### Mankifg -- Other

@@ -1,0 +1,128 @@
+.btn1{
+
+    position: absolute;
+
+    background-color: transparent;
+    border-color: transparent;
+    
+  
+
+    left: 0%;
+    margin-left: 20%;
+    margin-top: 5%;
+
+}
+
+
+
+.btn2{
+
+    position: absolute;
+
+    background-color: transparent;
+    border-color: transparent;
+
+
+    right: 0%;
+    margin-right: 20%;
+    margin-top: 5%;
+
+}
+
+
+canvas{
+
+    position: absolute;
+    z-index: -10;
+
+    left: 0%;
+    top: 0%;
+
+    background-color: black;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.btn1{
+
+    position: absolute;
+    border-color: transparent;
+    background-color: transparent;
+
+    left: 0%;
+    margin-left: 40%;
+
+    width: 8%;
+    height: 22%;
+
+}
+
+
+.btn1:hover{
+
+    position: absolute;
+    border-color: transparent;
+    background-color: transparent;
+
+    left: 0%;
+    margin-left: 40%;
+
+    width: 9%;
+    height: 24%;
+
+}
+
+
+.bb{
+
+    position: absolute;
+    left: 0%;
+    margin-left: 40%;
+
+    width: 8%;
+    height: 22%;
+
+    z-index: -1;
+
+}
+
+.bb:hover{
+
+    position: absolute;
+    left: 0%;
+    margin-left: 40%;
+
+    width: 9%;
+    height: 24%;
+
+    z-index: -1;
+
+}
+
+
+.btn2{
+
+    position: absolute;
+    border-color: transparent;
+    background-color: black;
+
+    right: 0%;
+    margin-right: 40%;
+
+}
+
+
+*/
