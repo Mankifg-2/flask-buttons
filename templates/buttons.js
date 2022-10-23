@@ -1,25 +1,88 @@
+var lyState = "Off";
+var lbState = "Off";
+var lgState = "Off";
+
 
             function yLight(){
 
                 var yb = document.getElementById("yb");
 
-                if (yb.src = "./Buttons/Yellow_Bulb_Off.png"){
+                if (lyState == "Off"){
 
                     console.log("1");
                     yb.src  = "./Buttons/Yellow_Bulb_On.png";
-                    
-                    console.log(yb.src);
 
-                    /*
-                    document.getElementById("yb").style.height = "100%"
-                    document.getElementById("yb").style.width = "100%"
-                    */
+                    lyState = "On";
 
-                } else {
+
+                } else if(lyState == "On"){
 
                     console.log("2");
 
                     yb.src  = "./Buttons/Yellow_Bulb_Off.png";
+
+                    lyState = "Off";
+
+
+                }
+               
+
+            }
+
+
+            function bLight(){
+
+                var bb = document.getElementById("bb");
+
+                if (lbState == "Off"){
+
+                    console.log("1");
+                    bb.src  = "./Buttons/Blue_Bulb_On.png";
+                    
+
+                    lbState = "On";
+
+
+                } else if(lbState == "On"){
+
+                    console.log("2");
+
+                    bb.src  = "./Buttons/Blue_Bulb_Off.png";
+
+                    lbState = "Off";
+
+
+                }
+           
+
+            }
+
+
+
+
+
+            function gLight(){
+
+                var gb = document.getElementById("gb");
+
+                if (lgState == "Off"){
+
+                    console.log("1");
+                    gb.src  = "./Buttons/Green_Bulb_On.png";
+                    
+                    console.log(gb.src);
+
+                    lgState = "On";
+
+
+                } else if(lgState == "On"){
+
+                    console.log("2");
+
+                    gb.src  = "./Buttons/Green_Bulb_Off.png";
+
+                    lgState = "Off";
+
 
                 }
                
