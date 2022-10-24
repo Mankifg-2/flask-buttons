@@ -5,6 +5,8 @@ var lgState = "Off";
 
             function yLight(){
 
+                document.getElementById("lSound").play();
+
                 var yb = document.getElementById("yb");
 
                 if (lyState == "Off"){
@@ -31,6 +33,8 @@ var lgState = "Off";
 
 
             function bLight(){
+
+                document.getElementById("lSound").play();
 
                 var bb = document.getElementById("bb");
 
@@ -62,6 +66,8 @@ var lgState = "Off";
 
 
             function gLight(){
+
+                document.getElementById("lSound").play();
 
                 var gb = document.getElementById("gb");
 
