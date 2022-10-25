@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="./buttons.js"></script>
 
 </head>
 <body>
-    
     <audio id="lSound" src="./light-switch-81967.mp3"></audio>
 
     <canvas class="canvas"></canvas>
 
-    <b class="Instructions">Click to ignite!</b>
+    <h1>Click to ignite!</h1>
 
-    
+
     <form method="post" action="/">
-        <input type="submit" value="light-1" name="light-1" />
-        <input type="submit" value="light-2" name="light-2" />
+        <input class="button" type="submit" value="light-1" name="light-1" />
+        <input class="button" type="submit" value="light-2" name="light-2" />
     </form>
   
+    <style>
+        button {
+
+        }
+    </style>
 </body>
 </html>
